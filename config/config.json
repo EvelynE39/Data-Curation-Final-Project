@@ -1,0 +1,91 @@
+{
+  "dataset_name": "Bitcoin Tweets Dataset",
+
+  "input_file": "data/raw/bitcoin_tweets_latest.csv",
+
+  "output_file": "data/curated/bitcoin_tweets_clean.csv",
+
+  "required_fields": [
+    "text",
+    "date"
+  ],
+
+  "date_columns": [
+    "date",
+    "user_created"
+  ],
+
+  "date_format": "ymd_hms",
+
+  "boolean_columns": [
+    "user_verified",
+    "is_retweet"
+  ],
+
+  "numeric_columns": [
+    "user_followers",
+    "user_friends",
+    "user_favourites"
+  ],
+
+  "text_columns": [
+    "text"
+  ],
+
+  "range_checks": {
+    "user_followers": {
+      "min": 0,
+      "max": 100000000
+    },
+
+    "user_friends": {
+      "min": 0,
+      "max": 1000000
+    },
+
+    "user_favourites": {
+      "min": 0,
+      "max": 10000000
+    }
+  },
+
+  "date_range_checks": {
+    "user_created": {
+      "min_date": "2006-03-21",
+      "max_date": null,
+      "remove_out_of_range": true
+    },
+
+    "date": {
+      "min_date": "2006-03-21",
+      "max_date": "CURRENT_DATE",
+      "remove_out_of_range": false
+    }
+  },
+
+  "missing_value_thresholds": {
+    "moderate": 5,
+    "high": 20
+  },
+
+  "text_cleaning": {
+    "remove_urls": true,
+    "remove_mentions": true,
+    "remove_rt_prefix": true,
+    "trim_whitespace": true
+  },
+
+  "remove_exact_duplicates": true,
+
+  "remove_rows_missing_all": [
+    "text",
+    "date"
+  ],
+
+  "report_paths": {
+    "profile_report": "reports/profiling/profile_report.txt",
+    "validation_report": "reports/validation/validation_report.txt",
+    "cleaning_report": "reports/cleaning/cleaning_report.txt",
+    "pipeline_log": "reports/logs/pipeline_log.txt"
+  }
+}
