@@ -46,5 +46,5 @@ profile_dataset <- function(data, config) {
   
   sink()
   
-  cat(sprintf("[PROFILE] Saved to %s", report_path))
+  message(sprintf("[PROFILE] Saved to %s", report_path))
 }

@@ -14,4 +14,4 @@ profile_dataset(data, config)
 validate_dataset(data, config)
 cleaned_data <- clean_dataset(data, config)
 
-cat("Pipeline complete. Outputs saved to configured directories")
+message("Pipeline complete. Outputs saved to configured directories")

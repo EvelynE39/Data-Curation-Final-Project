@@ -5,7 +5,7 @@ ingest_data <- function(config) {
   
   data <- read_csv(config$input_file)
   
-  cat(sprintf("[INGEST] Loaded %s rows and %s columns",
+  message(sprintf("[INGEST] Loaded %s rows and %s columns",
                 nrow(data), ncol(data)))
   
   return(data)
