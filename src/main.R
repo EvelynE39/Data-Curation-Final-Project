@@ -9,10 +9,9 @@ source("src/clean.R")
 config <- fromJSON("config/config.json")
 
 # RUN PIPLINE
-
 data <- ingest_data(config)
 profile_dataset(data, config)
 validate_dataset(data, config)
 cleaned_data <- clean_dataset(data, config)
 
-print("Pipeline complete. Outputs saved to configured directories")
+cat("Pipeline complete. Outputs saved to configured directories")
