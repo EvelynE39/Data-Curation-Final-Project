@@ -3,5 +3,6 @@ install.packages(c(
   "lubridate",
   "jsonlite",
   "stringr",
-  "readr"
+  "readr",
+  "tibble"
 ))

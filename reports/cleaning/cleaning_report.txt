@@ -1,1 +1,5 @@
-[1] "cleaning test report"
+wrote 3.30kB in  0s, 182.34MB/s                                                           wrote 2.15GB in  0s, 2.15GB/s                                                           Saved cleaned dataset -> data/curated/bitcoin_tweets_clean.csv
+
+Rows before: 1000
+Rows after: 995
+Removed: 5
