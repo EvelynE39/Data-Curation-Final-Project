@@ -85,7 +85,6 @@
   "report_paths": {
     "profile_report": "reports/profiling/profile_report.txt",
     "validation_report": "reports/validation/validation_report.txt",
-    "cleaning_report": "reports/cleaning/cleaning_report.txt",
-    "pipeline_log": "reports/logs/pipeline_log.txt"
+    "cleaning_report": "reports/cleaning/cleaning_report.txt"
   }
 }
