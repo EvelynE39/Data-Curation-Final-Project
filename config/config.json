@@ -1,7 +1,7 @@
 {
   "dataset_name": "Bitcoin Tweets Dataset",
 
-  "input_file": "data/raw/bitcoin_tweets_latest.csv",
+  "input_file": "data/test/bitcoin_tweets_1000_rows.csv",
 
   "output_file": "data/curated/bitcoin_tweets_clean.csv",
 
