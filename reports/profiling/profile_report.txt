@@ -18,6 +18,7 @@ text                          5 missing (0.5%) [LOW]
 hashtags                    199 missing (19.9%) [MODERATE]
 source                       19 missing (1.9%) [LOW]
 is_retweet                    7 missing (0.7%) [LOW]
+
 DUPLICATES
 --------------------------------
 Exact duplicates: 0
