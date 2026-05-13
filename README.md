@@ -40,40 +40,28 @@ A large-scale Twitter sentiment dataset containing:
 final-project/
 
 ├── README.md
-
 ├── config/
-
 │   ├── bitcoin_config.json
-
 │   ├── sentiment_config.json
-
 ├── data/
-
 │   ├── raw/
-
 │   ├── curated/
-
+│   ├── test/
+│       ├───bitcoin_tweets_1000_rows.csv
+│       ├───sentiment_tweets_1000_rows.csv
 ├── src/
-
 │   ├── main.R
-
 │   ├── ingest.R
-
 │   ├── profile.R
-
 │   ├── validate.R
-
 │   ├── clean.R
-
 ├── reports/
-
 │   ├── profiling/
-
 │   ├── validation/
-
 │   ├── cleaning/
-
-└── docs/
+├── docs/
+│   ├── validation_rules_inventory.md
+└── reflection/
 ```
 
 ## Installation
@@ -93,19 +81,12 @@ final-project/
 ```r
 
 install.packages(c(
-
  "tidyverse",
-
  "lubridate",
-
  "jsonlite",
-
  "stringr",
-
  "readr",
-
  "tibble"
-
 ))
 
 ```
