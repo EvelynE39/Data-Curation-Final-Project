@@ -1,0 +1,17 @@
+BASIC INFO
+--------------------------------
+Rows: 1600000
+Columns: 6
+
+MISSING VALUES AND QUALITY FLAGS
+--------------------------------
+target                        0 missing (0.0%) [LOW]
+ids                           0 missing (0.0%) [LOW]
+date                          0 missing (0.0%) [LOW]
+flag                          0 missing (0.0%) [LOW]
+user_name                     0 missing (0.0%) [LOW]
+text                          0 missing (0.0%) [LOW]
+
+DUPLICATES
+--------------------------------
+Exact duplicates in raw dataset: 0

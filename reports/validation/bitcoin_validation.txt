@@ -1,17 +1,17 @@
 REQUIRED FIELDS
 --------------------------------
-text -> 5 missing
-date -> 5 missing
+text -> 65643 missing
+date -> 65649 missing
 
 DATE VALIDATION
 --------------------------------
-date -> 1 invalid dates
+date -> 15053 invalid dates
 date -> 0 out-of-range dates
-user_created -> 5 invalid dates
-user_created -> 0 out-of-range dates
+user_created -> 33332 invalid dates
+user_created -> 7 out-of-range dates
 
 RANGE CHECKS
 --------------------------------
 user_followers -> 0 out-of-range values
-user_friends -> 0 out-of-range values
+user_friends -> 4 out-of-range values
 user_favourites -> 0 out-of-range values

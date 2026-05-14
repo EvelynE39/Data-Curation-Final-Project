@@ -1,0 +1,56 @@
+Starting rows:    4,751,554
+Starting columns: 13
+
+BOOLEAN CONVERSION
+--------------------------------
+Converted 'user_verified' to logical
+Converted 'is_retweet' to logical
+
+NUMERIC CONVERSION
+--------------------------------
+Converted 'user_followers' to integer
+Converted 'user_friends' to integer
+Converted 'user_favourites' to integer
+
+
+DATA STANDARDIZATION
+--------------------------------
+Standardized 'date' to POSIXct (UTC)
+Standardized 'user_created' to POSIXct (UTC)
+
+
+TEXT CLEANING
+--------------------------------
+Cleaned text column 'text'
+
+
+REMOVE BROKEN ROWS
+--------------------------------
+Removed 65,643 rows missing all of: text, date
+
+REMOVE DATE OUTLIERS
+--------------------------------
+Removed 7 rows with 'user_created' before 2006-03-21
+Removed 0 rows with 'date' before 2006-03-21
+
+
+REMOVE DUPLICATES
+--------------------------------
+Removed 11,035 exact duplicate rows
+
+
+CLEANING SUMMARY
+--------------------------------
+Rows before cleaning: 4751554
+Rows after cleaning:  4674869
+Total rows removed:   76685
+
+Rows removed by reason:
+  Missing required data: 65643
+  Date anomalies:        7
+  Duplicate rows:        11035
+
+  Note: Duplicate counts may differ from profiling report
+  because cleaning transformations can standardize values
+  and create new duplicate matches.
+

@@ -1,0 +1,45 @@
+Starting rows:    1,600,000
+Starting columns: 6
+
+BOOLEAN CONVERSION
+--------------------------------
+
+NUMERIC CONVERSION
+--------------------------------
+Converted 'target' to integer
+
+
+DATA STANDARDIZATION
+--------------------------------
+Standardized 'date' to POSIXct (UTC)
+
+
+TEXT CLEANING
+--------------------------------
+Cleaned text column 'text'
+
+
+REMOVE BROKEN ROWS
+--------------------------------
+Removed 0 rows missing all of: text, date
+
+REMOVE DATE OUTLIERS
+--------------------------------
+Removed 45,286 rows with 'date' before 2006-03-21
+
+
+REMOVE DUPLICATES
+--------------------------------
+Removed 0 exact duplicate rows
+
+
+CLEANING SUMMARY
+--------------------------------
+Rows before cleaning: 1600000
+Rows after cleaning:  1554714
+Total rows removed:   45286
+
+Note: Duplicate counts may differ from profiling report
+ because cleaning transformations can standardize values
+ and create new duplicate matches.
+

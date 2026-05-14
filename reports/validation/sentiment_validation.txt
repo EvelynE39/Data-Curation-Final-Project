@@ -1,0 +1,13 @@
+REQUIRED FIELDS
+--------------------------------
+text -> 0 missing
+date -> 0 missing
+
+DATE VALIDATION
+--------------------------------
+date -> 1420352 invalid dates
+date -> 70740 out-of-range dates
+
+RANGE CHECKS
+--------------------------------
+target -> 0 out-of-range values
