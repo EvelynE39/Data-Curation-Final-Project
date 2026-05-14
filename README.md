@@ -61,7 +61,10 @@ final-project/
 │   ├── cleaning/
 ├── docs/
 │   ├── validation_rules_inventory.md
-└── reflection/
+│   ├── bitcoin_schema.md
+│   ├── sentiment_schema.md
+├── reflection/
+└── ├── reflection_essay.md
 ```
 
 ## Installation
