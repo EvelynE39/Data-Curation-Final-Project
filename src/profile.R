@@ -41,7 +41,7 @@ profile_dataset <- function(data, config) {
   
   cat("\nDUPLICATES\n")
   cat("--------------------------------\n")
-  cat(sprintf("Exact duplicates: %s\n",
+  cat(sprintf("Exact duplicates in raw dataset: %s\n",
               sum(duplicated(data))))
   
   sink()

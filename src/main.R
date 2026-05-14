@@ -6,7 +6,7 @@ source("src/validate.R")
 source("src/clean.R")
 
 # LOAD CONFIG
-config <- fromJSON("config/config.json")
+config <- fromJSON("config/bitcoin_config.json")
 
 # RUN PIPLINE
 data <- ingest_data(config)
