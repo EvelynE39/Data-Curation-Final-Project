@@ -1,9 +1,9 @@
 {
   "dataset_name": "Sentiment140 Twitter Dataset",
 
-  "input_file": "data/raw/sentiment140.csv",
+  "input_file": "data/raw/sentiment.csv",
 
-  "output_file": "data/curated/sentiment140_clean.csv",
+  "output_file": "data/curated/sentiment_clean.csv",
 
   "required_fields": [
     "text",
@@ -55,7 +55,7 @@
     "date": {
       "min_date": "2006-03-21",
       "max_date": "CURRENT_DATE",
-      "remove_out_of_range": false
+      "remove_out_of_range": true
     }
   },
 
@@ -68,8 +68,7 @@
     "remove_urls": true,
     "remove_mentions": true,
     "remove_rt_prefix": true,
-    "trim_whitespace": true,
-    "create_clean_column": true
+    "trim_whitespace": true
   },
 
   "remove_exact_duplicates": true,
@@ -80,8 +79,8 @@
   ],
 
   "report_paths": {
-    "profile_report": "reports/profiling/sentiment140_profile.txt",
-    "validation_report": "reports/validation/sentiment140_validation.txt",
-    "cleaning_report": "reports/cleaning/sentiment140_cleaning.txt"
+    "profile_report": "reports/profiling/sentiment_profile.txt",
+    "validation_report": "reports/validation/sentiment_validation.txt",
+    "cleaning_report": "reports/cleaning/sentiment_cleaning.txt"
   }
 }

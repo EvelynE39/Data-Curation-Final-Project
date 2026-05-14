@@ -1,7 +1,7 @@
 {
   "dataset_name": "Bitcoin Tweets Dataset",
 
-  "input_file": "data/test/bitcoin_tweets_1000_rows.csv",
+  "input_file": "data/raw/bitcoin.csv",
 
   "output_file": "data/curated/bitcoin_tweets_clean.csv",
 
@@ -59,7 +59,7 @@
     "date": {
       "min_date": "2006-03-21",
       "max_date": "CURRENT_DATE",
-      "remove_out_of_range": false
+      "remove_out_of_range": true
     }
   },
 
@@ -83,8 +83,8 @@
   ],
 
   "report_paths": {
-    "profile_report": "reports/profiling/profile_report.txt",
-    "validation_report": "reports/validation/validation_report.txt",
-    "cleaning_report": "reports/cleaning/cleaning_report.txt"
+    "profile_report": "reports/profiling/bitcoin_profile.txt",
+    "validation_report": "reports/validation/bitcoin_validation.txt",
+    "cleaning_report": "reports/cleaning/bitcoin_cleaning.txt"
   }
 }
