@@ -1,14 +1,10 @@
-Evelyn Escalera Munoz  
-DS-3313 Data Curation  
-May 14th, 2026
-
 # Final Project Reflection
 
 ## Introduction
 
 For this project, I developed a reusable data curation pipeline in R designed to automate the data cleaning and validation process. The workflow was built to support multiple datasets through the use of modular scripts and JSON configuration files. The pipeline included stages for data ingestion, profiling, validation, cleaning, reporting, and output generation. The main goal of the project was to create a system that could process a new dataset with minimal code changes by separating configuration from core logic.
 
-The original dataset used for development was a Bitcoin tweets dataset containing tweet text, user metadata, timestamps, and engagement information. To test generalization, I later adapted the same workflow to a second dataset, the Sentiment140 Twitter dataset. 
+The original dataset used for development was a Bitcoin tweets dataset containing tweet text, user metadata, timestamps, and engagement information. To test generalization, I later adapted the same workflow to a second dataset, the Sentiment140 Twitter dataset.
 
 ## Easy and Difficult Rules to Formalize
 
@@ -26,7 +22,7 @@ The pipeline handles several tasks reliably and consistently. Type normalization
 
 The reporting system was also reliable. The workflow automatically generated profiling reports, validation reports, and cleaning summaries that documented what occurred during processing. This improved reproducibility because the outputs clearly showed how many rows were removed, what transformations were applied, and what validation issues were detected.
 
-The main thing that requires human review is the configuration file for the dataset. I tried to make it as customizable as possible, so the user can determine numeric/date ranges, whether or not to delete duplicates, whether to clean the text by removing urls, mentions, etc. 
+The main thing that requires human review is the configuration file for the dataset. I tried to make it as customizable as possible, so the user can determine numeric/date ranges, whether or not to delete duplicates, whether to clean the text by removing urls, mentions, etc.
 
 ## Generalization to the Second Dataset
 
@@ -36,7 +32,7 @@ Most of the adjustments required for the second dataset involved updating the co
 
 One issue was the fact that the dataset had no header row. This caused many issues during the initial run of the script because there were no column names to read. I had to add the header names manually to fix the issue.
 
-Another issue that occurred during testing involved missing standardized column names. The cleaning script expected columns named text and date, but the raw Sentiment140 dataset used different names. This caused errors until column mapping was properly implemented in the ingestion stage. 
+Another issue that occurred during testing involved missing standardized column names. The cleaning script expected columns named text and date, but the raw Sentiment140 dataset used different names. This caused errors until column mapping was properly implemented in the ingestion stage.
 
 The project generalized best to datasets with similar characteristics, such as CSV based social media or text datasets. The pipeline would likely require significant modification to handle more complex data formats.
 
@@ -54,7 +50,7 @@ There is also a risk of erasing meaningful context during text normalization. Re
 
 Another concern is false confidence. Automated validation reports may create the impression that a cleaned dataset is fully accurate and trustworthy. In reality, the system can only validate rules that were explicitly defined. Many semantic, contextual, or social issues remain invisible to automated checks. A dataset may appear “clean” even though it still contains misinformation, sarcasm, spam, or biased content.
 
-Improvements Needed for Professional Use
+## Improvements Needed for Professional Use
 
 Although the pipeline was successful as an academic project, several improvements would be necessary before it could be used professionally or organizationally.
 
@@ -62,7 +58,7 @@ One important improvement would be automatic schema detection and more advanced 
 
 The project would also benefit from stronger logging, error handling, and testing. More detailed logs and unit tests would improve reliability and make debugging easier in larger production environments.
 
-Scalability is another limitation. The workflow currently processes CSV files locally in R, which may not perform well with extremely large datasets or real-time data streams. 
+Scalability is another limitation. The workflow currently processes CSV files locally in R, which may not perform well with extremely large datasets or real-time data streams.
 
 Another important improvement would be adding more advanced semantic validation. The current system focuses mostly on structural data quality issues. Future versions could include machine learning or natural language processing techniques for detecting spam, semantic duplicates, sentiment inconsistencies, or suspicious behavior patterns.
 
@@ -73,4 +69,3 @@ Overall, this project demonstrated that many data curation tasks can be standard
 At the same time, the project highlighted the limitations of automation. Some data quality issues are easy to formalize because they rely on objective rules, while others require interpretation, context, and human judgment. The workflow improved consistency and reproducibility, but it also embedded assumptions about what “clean” data should look like.
 
 The experience helped me better understand both the technical and conceptual challenges involved in data curation. It also reinforced the importance of balancing automation with human oversight when building systems that process real-world data.
-
